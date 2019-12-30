@@ -1,6 +1,7 @@
 export {AcePlot} from "./ace"
 export {Audio} from "./audio"
 export {HTML} from "./html"
+export {FileDownload} from "./file_download"
 export {KaTeX} from "./katex"
 export {MathJax} from "./mathjax"
 export {Player} from "./player"
