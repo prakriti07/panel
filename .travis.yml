@@ -83,7 +83,7 @@ jobs:
       env: DESC="dev test_all" PYTHON_VERSION=3.7
       before_install:
         # Installing python3.7 as by default travis don't have python3.7
-        - add-apt-repository "deb http://ports.ubuntu.com/ubuntu-ports/  eoan main universe"
+        - sudo add-apt-repository "deb http://ports.ubuntu.com/ubuntu-ports/  eoan main universe"
         - apt-get update
         - apt-get install python3.7
         - apt-get install python3-pip
