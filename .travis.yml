@@ -84,7 +84,7 @@ jobs:
       before_install:
         # Installing python3.7 as by default travis don't have python3.7
         - sudo add-apt-repository "deb http://ports.ubuntu.com/ubuntu-ports/  eoan main universe"
-        - apt-get update
+        - sudo apt-get update
         - apt-get install python3.7
         - apt-get install python3-pip
         # install doit/pyctdev and archiconda...
