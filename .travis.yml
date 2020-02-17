@@ -95,7 +95,7 @@ jobs:
         - export PATH="$HOME/miniconda/bin:$PATH" && hash -r
         # Creating link to use conda for sudo user as arm64 requires root permisson to trigger/execute test
         # We will execute all tests with sudo
-        - sudo ln -s $HOME/miniconda/bin/conda /usr/bin/
+        #- sudo ln -s $HOME/miniconda/bin/conda /usr/bin/
         - sudo conda config --set always_yes True
         - sudo doit ecosystem_setup
       install:
