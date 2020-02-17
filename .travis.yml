@@ -83,12 +83,12 @@ jobs:
       env: DESC="dev test_all" PYTHON_VERSION=3.7
       before_install:
         # Installing python3.7 as by default travis don't have python3.7
-        - sudo add-apt-repository "deb http://ports.ubuntu.com/ubuntu-ports/  eoan main universe"
-        - sudo apt-get update
-        - sudo apt-get install python3.7
-        - sudo apt-get install python3-pip
+        - add-apt-repository "deb http://ports.ubuntu.com/ubuntu-ports/  eoan main universe"
+        - apt-get update
+        - apt-get install python3.7
+        - apt-get install python3-pip
         # install doit/pyctdev and archiconda...
-        - sudo python3.7 -m pip install pyctdev
+        - python3.7 -m pip install pyctdev
         - wget "https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh" -O archiconda.sh
         - chmod +x archiconda.sh
         - bash archiconda.sh -b -p $HOME/miniconda
